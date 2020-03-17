@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     // Manejar petición GET
     $universidades = Universidad::getAll();
 
-    if ($metas) {
+    if ($universidades) {
 
         $datos["estado"] = 1;
         $datos["universidades"] = $universidades;
